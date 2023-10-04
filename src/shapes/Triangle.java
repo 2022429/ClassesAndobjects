@@ -4,12 +4,60 @@
  */
 package shapes;
 
+
+
+
+
 /**
  *
  * @author sadiq
  */
-public class Triangle {
-    int side1;
-    int side2;
-    int side3;
+public class  Triangle extends Shape{
+
+private String string;
+
+    /**
+     * Get the value of string
+     *
+     * @return the value of string
+     */
+    public String getString() {
+        return string;
+    }
+
+    /**
+     * Set the value of string
+     *
+     * @param string new value of string
+     */
+    public void setString(String string) {
+        this.string = string;
+    }
+
+
+    
+
+    
+    private int side1;
+    private int side2;
+    private int side3;
+
+    public int getSide1() {
+        return side1;
+        
+    }
+public void setside1(int side1){
+    if(side1>0){
+        this.side1 =side1;
+    } else{
+        System.out.println("cannot set of triangle");
+    }
+}
+    public int getSide2() {
+        return side2;
+    }
+
+    public int getSide3() {
+        return side3;
+    }
 }
