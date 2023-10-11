@@ -9,7 +9,7 @@ package shapes;
  * @author sadiq
  */
 public abstract class Shape {
-    private String colour="fellow";
+    String colour="fellow";
     private boolean IsFilled=true;
 
     public String getColour() {
@@ -27,4 +27,6 @@ public abstract class Shape {
     public void setIsFilled(boolean IsFilled) {
         this.IsFilled = IsFilled;
     }
+    public abstract double getArea();
+        
 }

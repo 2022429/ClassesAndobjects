@@ -60,4 +60,24 @@ public void setside1(int side1){
     public int getSide3() {
         return side3;
     }
-}
+    @Override
+    public double getArea(){
+        return 0.5 * side1 * side2;
+    }
+    @Override
+    public void setColour(String colour){
+        if (colour.equals("Blue")) {
+            this.colour ="Red";
+            
+        }else{
+            this.colour = colour;
+        }
+    }
+    
+    @Override
+    public String toString(){
+        return "Hello ! Iam a triangle with colour of :" + colour;
+        
+    }
+    }
+
